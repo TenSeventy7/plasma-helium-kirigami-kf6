@@ -1,4 +1,5 @@
 %global framework kirigami
+%global majmin_ver_kf6 6.16
 
 Name:           kf6-%{framework}
 Version:        6.16.0
@@ -6,7 +7,7 @@ Release:        2%{?dist}
 Summary:        QtQuick plugins to build user interfaces based on the KDE UX guidelines
 License:        BSD-3-Clause AND CC0-1.0 AND FSFAP AND GPL-2.0-or-later AND LGPL-2.0-or-later AND LGPL-2.1-only AND LGPL-2.1-or-later AND LGPL-3.0-only AND (LGPL-2.1-only OR LGPL-3.0-only) AND MIT
 URL:            https://invent.kde.org/frameworks/%{framework}
-Source0:        https://download.kde.org/%{stable_kf6}/frameworks/%{majmin_ver_kf6}/%{framework}-%{version}.tar.xz
+Source0:        https://download.kde.org/stable/frameworks/%{majmin_ver_kf6}/%{framework}-%{version}.tar.xz
 
 # -- UPSTREAM --
 
@@ -17,7 +18,7 @@ Source20:       helium.patch
 
 BuildRequires:  cmake
 BuildRequires:  gcc-c++
-BuildRequires:  extra-cmake-modules >= %{majmin_ver_kf6}
+BuildRequires:  extra-cmake-modules >= %{version}
 BuildRequires:  kf6-rpm-macros
 BuildRequires:  make
 BuildRequires:  qt6-linguist
