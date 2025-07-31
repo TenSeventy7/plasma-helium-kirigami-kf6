@@ -1,0 +1,25 @@
+diff --git a/src/platform/units.cpp b/src/platform/units.cpp
+index 0591e87..933f3df 100644
+--- a/src/platform/units.cpp
++++ b/src/platform/units.cpp
+@@ -35,16 +35,16 @@ public:
+         // Cache font so we don't have to go through QVariant and property every time
+         : fontMetrics(QFontMetricsF(QGuiApplication::font()))
+         , gridUnit(18)
+-        , smallSpacing(4)
+-        , mediumSpacing(6)
+-        , largeSpacing(8)
++        , smallSpacing(8)
++        , mediumSpacing(12)
++        , largeSpacing(16)
+         , veryLongDuration(400)
+         , longDuration(200)
+         , shortDuration(100)
+         , veryShortDuration(50)
+         , humanMoment(2000)
+         , toolTipDelay(700)
+-        , cornerRadius(5)
++        , cornerRadius(6)
+         , iconSizes(new IconSizes(units))
+     {
+     }
