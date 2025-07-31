@@ -1,5 +1,18 @@
+diff --git a/src/controls/private/ActionMenuItem.qml b/src/controls/private/ActionMenuItem.qml
+index 96a0472..d98103c 100644
+--- a/src/controls/private/ActionMenuItem.qml
++++ b/src/controls/private/ActionMenuItem.qml
+@@ -12,7 +12,7 @@ import org.kde.kirigami as Kirigami
+ QQC2.MenuItem {
+     visible: !(action instanceof Kirigami.Action) || action.visible
+     autoExclusive: action instanceof Kirigami.Action && action.autoExclusive
+-    height: visible ? implicitHeight : 0
++    height: visible ? (implicitHeight + 4) : 0
+ 
+     QQC2.ToolTip.text: (action instanceof Kirigami.Action) ? action.tooltip : ""
+     QQC2.ToolTip.visible: hovered && QQC2.ToolTip.text.length > 0
 diff --git a/src/platform/units.cpp b/src/platform/units.cpp
-index 0591e87..933f3df 100644
+index 0591e87..6b2e411 100644
 --- a/src/platform/units.cpp
 +++ b/src/platform/units.cpp
 @@ -35,16 +35,16 @@ public:
@@ -9,9 +22,9 @@ index 0591e87..933f3df 100644
 -        , smallSpacing(4)
 -        , mediumSpacing(6)
 -        , largeSpacing(8)
-+        , smallSpacing(8)
-+        , mediumSpacing(12)
-+        , largeSpacing(16)
++        , smallSpacing(5)
++        , mediumSpacing(7)
++        , largeSpacing(11)
          , veryLongDuration(400)
          , longDuration(200)
          , shortDuration(100)
