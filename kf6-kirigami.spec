@@ -3,7 +3,7 @@
 
 Name:           kf6-%{framework}
 Version:        6.16.0
-Release:        2%{?dist}
+Release:        2.1%{?dist}
 Summary:        QtQuick plugins to build user interfaces based on the KDE UX guidelines
 License:        BSD-3-Clause AND CC0-1.0 AND FSFAP AND GPL-2.0-or-later AND LGPL-2.0-or-later AND LGPL-2.1-only AND LGPL-2.1-or-later AND LGPL-3.0-only AND (LGPL-2.1-only OR LGPL-3.0-only) AND MIT
 URL:            https://invent.kde.org/frameworks/%{framework}
@@ -14,7 +14,7 @@ Source0:        https://download.kde.org/stable/frameworks/%{majmin_ver_kf6}/%{f
 # Revert "Properly Align menubar when there is a sidebar
 # https://invent.kde.org/frameworks/kirigami/-/merge_requests/1837
 Source10:       1837.patch
-Source20:       helium.patch
+Patch20:       helium.patch
 
 BuildRequires:  cmake
 BuildRequires:  gcc-c++
