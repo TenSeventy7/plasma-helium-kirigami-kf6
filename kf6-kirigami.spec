@@ -1,8 +1,8 @@
 %global framework kirigami
-%global majmin_ver_kf6 6.16
+%global majmin_ver_kf6 6.18
 
 Name:           kf6-%{framework}
-Version:        6.16.0
+Version:        6.18.0
 Release:        2.5%{?dist}
 Summary:        QtQuick plugins to build user interfaces based on the KDE UX guidelines
 License:        BSD-3-Clause AND CC0-1.0 AND FSFAP AND GPL-2.0-or-later AND LGPL-2.0-or-later AND LGPL-2.1-only AND LGPL-2.1-or-later AND LGPL-3.0-only AND (LGPL-2.1-only OR LGPL-3.0-only) AND MIT
@@ -96,7 +96,8 @@ Developer Documentation files for %{name} in HTML format
 %{_kf6_libdir}/libKirigamiPrivate.so.%{version}
 %{_kf6_libdir}/libKirigamiPolyfill.so.6
 %{_kf6_libdir}/libKirigamiPolyfill.so.%{version}
-
+%{_kf6_libdir}/libKirigamiTemplates.so.6
+%{_kf6_libdir}/libKirigamiTemplates.so.%{version}
 
 %files devel
 %dir %{_kf6_datadir}/kdevappwizard/
@@ -114,6 +115,7 @@ Developer Documentation files for %{name} in HTML format
 %{_kf6_libdir}/libKirigamiPrimitives.so
 %{_kf6_libdir}/libKirigamiPrivate.so
 %{_kf6_libdir}/libKirigamiPolyfill.so
+%{_kf6_libdir}/libKirigamiTemplates.so
 %{_qt6_docdir}/*/*.tags
 %{_qt6_docdir}/*/*.index
 
